@@ -57,8 +57,11 @@
                     </p>
                     <a href="" class="button-content-product">ORDER NOW</a>
                 </div>
-                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 content-right">
-                    <img src="{{ asset('images/10.png') }}" width="85%" class="img-fluid" alt="">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 content-right d-flex">
+                    <img src="{{ asset('images/hana6.jpg') }}" width="25%" class="img-fluid" alt="">
+                    <img src="{{ asset('images/hana1.jpg') }}" width="25%" class="img-fluid" alt="">
+                    <img src="{{ asset('images/hana4.jpg') }}" width="25%" class="img-fluid" alt="">
+                    <img src="{{ asset('images/hana2.jpg') }}" width="25%" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
@@ -97,7 +100,7 @@
             </div>
         </div>
     </div>
-    <div class="slide-birthday">
+    {{-- <div class="slide-birthday">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-12">
@@ -109,17 +112,12 @@
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="{{ asset('images/sl1.jpg') }}" alt="First slide">
+                                <img style="object-fit: cover; object-position: center" class="d-block w-100" src="{{ asset('images/sl2.jpg') }}" alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="{{ asset('images/sl2.jpg') }}" alt="Second slide">
+                                <img style="object-fit: cover; object-position: center" class="d-block w-100" src="{{ asset('images/sl4.jpg') }}" alt="Second slide">
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="{{ asset('images/sl3.jpg') }}" alt="Third slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="{{ asset('images/sl4.jpg') }}" alt="Third slide">
-                            </div>
+                            
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
                             data-slide="prev">
@@ -136,7 +134,7 @@
             </div>
         </div>
 
-    </div>
+    </div> --}}
     <div class="bosuutap">
         <div class="container">
             <div class="row justify-content-center align-items-center">
@@ -167,19 +165,19 @@
                     </p>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-                    <a href="https://www.facebook.com/"><img src="{{ asset('images/fl1.jpg') }}" width="75%"
+                    <a href="https://www.facebook.com/"><img src="{{ asset('images/hana7.jpg') }}" width="75%"
                             class="img-fluid" alt=""></a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-                    <a href="https://www.facebook.com/"><img src="{{ asset('images/fl2.jpg') }}" width="75%"
+                    <a href="https://www.facebook.com/"><img src="{{ asset('images/hana8.jpg') }}" width="75%"
                             class="img-fluid" alt=""></a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-                    <a href="https://www.facebook.com/"><img src="{{ asset('images/fl3.jpg') }}" width="75%"
+                    <a href="https://www.facebook.com/"><img src="{{ asset('images/hana9.jpg') }}" width="75%"
                             class="img-fluid" alt=""></a>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-                    <a href="https://www.facebook.com/"><img src="{{ asset('images/fl4.jpg') }}" width="75%"
+                    <a href="https://www.facebook.com/"><img src="{{ asset('images/hana10.jpg') }}" width="75%"
                             class="img-fluid" alt=""></a>
                 </div>
             </div>

@@ -446,8 +446,13 @@ h2 {
   color: white;
 }
 
-.content-product .content-right {
-  text-align: center;
+.content-product .content-right img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  padding: 5px;
+  height: 65vh;
 }
 
 .best-product {
@@ -524,20 +529,6 @@ h2 {
 
 .best-product .item:hover .content-item .giasp {
   display: none;
-}
-
-.slide-birthday {
-  background-color: #fef7f5;
-}
-
-.slide-birthday .title-slide {
-  font-size: 42px;
-  margin-top: 150px;
-  margin-bottom: 100px;
-}
-
-.slide-birthday .slide-hana {
-  margin-bottom: 70px;
 }
 
 .bosuutap {
@@ -1224,9 +1215,6 @@ h2 {
     font-size: 22px;
     letter-spacing: 0.1em;
     margin-bottom: 25px;
-  }
-  .content-product .content-right img {
-    width: 90%;
   }
 }
 
