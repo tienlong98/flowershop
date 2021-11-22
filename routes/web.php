@@ -13,6 +13,7 @@ use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\DetailComponent;
 use App\Http\Livewire\CategoryComponent;
 use App\Http\Livewire\SearchComponent;
+use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\Admin\AdminCategoryComponent;
 use App\Http\Livewire\Admin\AdminAddCategoryComponent;
 use App\Http\Livewire\Admin\AdminEditCategoryComponent;
@@ -50,6 +51,7 @@ Route::get('/product.{slug}', DetailComponent::class)->name('product.details');
 Route::get('/product-category.{category_slug}', CategoryComponent::class)->name('product.category');
 // Route::get('/search', SearchComponent::class)->name('product.search');
 Route::get('/thank-you', ThankyouComponent::class)->name('thankyou');
+Route::get('/contact', ContactComponent::class);
 
 Route::get('/search', function () {
     return view('livewire.search-component');

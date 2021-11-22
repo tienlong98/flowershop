@@ -793,6 +793,35 @@ h2 {
     }
 }
 
+.content_contact {
+    .item {
+        .contact_icon {
+            font-size: 30px;
+            color: #846445;
+        }
+        .contact_heading {
+            font-size: 20px;
+        }
+    }
+}
+
+.comment {
+    .from_control {
+        padding: 11px;
+        border: 1px solid #a7896a;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .form-control {
+        border: 1px solid #a7896a;
+    }
+    .sendmess {
+        .button-contact {
+            @include button();
+        }
+    }
+}
+
 @media screen and (max-width:75em) {
     .follow {
         .title-fl {

@@ -64,7 +64,7 @@
                                             <div class="mt-2"><a
                                                     href="{{ route('admin.categories') }}">カテゴリー</a>
                                             </div>
-                                            <div class="mt-2"><a href="{{ route('admin.product') }}">製品</a>
+                                            <div class="mt-2"><a href="{{ route('admin.product') }}">商品</a>
                                             </div>
                                             <div class="mt-2"><a href="{{ route('admin.coupons') }}">クーポン</a>
                                             </div>

@@ -45,7 +45,7 @@
 
                                     <td>
                                         <a href="{{route('admin.editcoupons', ['coupon_id' => $coupon->id])}}"><i class="far fa-edit"></i></a>
-                                        <a class="ml-2" onclick="confirm('Ban co chac chan Xoa') || event.stopImmediatePropagation()" href="#" wire:click.prevent="deleteCoupon({{$coupon->id}})"><i class="far fa-times-circle text-danger"></i></a>
+                                        <a class="ml-2" onclick="confirm('削除されますか？') || event.stopImmediatePropagation()" href="#" wire:click.prevent="deleteCoupon({{$coupon->id}})"><i class="far fa-times-circle text-danger"></i></a>
 
                                     </td>
                                 </tr>

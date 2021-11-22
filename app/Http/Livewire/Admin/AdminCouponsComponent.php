@@ -10,7 +10,7 @@ class AdminCouponsComponent extends Component
     public function deleteCoupon($coupon_id){
         $coupon = Coupon::find($coupon_id);
         $coupon->delete();
-        session()->flash('Tin_nhan_thanh_cong', 'Xoa Dang Muc Thanh Cong');
+        session()->flash('Tin_nhan_thanh_cong', '削除しました。');
 
     }
     public function render()

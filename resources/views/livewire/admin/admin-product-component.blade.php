@@ -70,7 +70,7 @@
                                         <td>
                                             <a
                                                 href="{{ route('admin.editproduct', ['product_slug' => $product->slug]) }}"><i class="far fa-edit"></i></i></a>
-                                            <a class="ml-2" href="#" onclick="confirm('Ban co chac chan Xoa') || event.stopImmediatePropagation()"
+                                            <a class="ml-2" href="#" onclick="confirm('削除されますか？') || event.stopImmediatePropagation()"
                                                 wire:click.prevent="deleteProduct({{ $product->id }})"><i class="far fa-times-circle text-danger"></i></a>
                                         </td>
                                     </tr>
