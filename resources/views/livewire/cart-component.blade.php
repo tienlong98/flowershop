@@ -6,10 +6,10 @@
             <div class="row">
                 <div class="col-xl-12 text-center">
                     <h1 class="title-shop">
-                        Cart
+                        カート
                     </h1>
                     <p class="text-shop">
-                        Home: <span>Cart</span>
+                        ホーム: <span>カート</span>
                     </p>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                 <div class="col-xl-12 gio-hang">
                     @if (Session::has('Tin_nhan_thanh_cong'))
                         <div class="alert alert-success">
-                            <strong>Thanh Cong</strong>{{ Session::get('Tin_nhan_thanh_cong') }}
+                            {{ Session::get('Tin_nhan_thanh_cong') }}
                         </div>
                     @endif
                     @if (Cart::count() > 0)
@@ -32,10 +32,10 @@
                             <table class="table text-center show-pc">
                                 <thead>
                                     <tr>
-                                        <th colspan="3">Product</th>
-                                        <th scope="col">Price</th>
-                                        <th scope="col">Quantity</th>
-                                        <th scope="col">Subtotal</th>
+                                        <th colspan="3">商品</th>
+                                        <th scope="col">価格</th>
+                                        <th scope="col">数量</th>
+                                        <th scope="col">小計</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -132,47 +132,47 @@
                         <table class="table">
 
                             <tr>
-                                <td>Subtotal</td>
+                                <td>小計</td>
                                 <td class="text-right">{{ number_format(Cart::subtotal()) }}円</td>
                             </tr>
                             @if (Session::has('coupon'))
                                 <tr>
-                                    <td>Discount({{ Session::get('coupon')['code'] }})</td>
+                                    <td>割引({{ Session::get('coupon')['code'] }})</td>
                                     <td class="text-right">{{ number_format($discount) }}円</td>
                                 </tr>
                                 <tr>
-                                    <td>Tax( {{ config('cart.tax') }}%)</td>
+                                    <td>税( {{ config('cart.tax') }}%)</td>
                                     <td class="text-right">{{ number_format($taxafterdiscount) }}円</td>
                                 </tr>
                                 <tr>
-                                    <td>Subtotal with Discount</td>
+                                    <td>割引の小計</td>
                                     <td class="text-right">{{ number_format($subtotalafterdiscount) }}円</td>
                                 </tr>
                                 <tr>
-                                    <td>Total</td>
+                                    <td>合計</td>
                                     <td class="text-right">{{ number_format($totalafterdiscount) }}円</td>
                                 </tr>
 
                             @else
                                 <tr>
-                                    <td>Tax</td>
+                                    <td>税</td>
                                     <td class="text-right">{{ number_format(Cart::tax()) }}円</td>
                                 </tr>
                                 <tr>
-                                    <td>Total</td>
+                                    <td>合計</td>
                                     <td class="text-right">{{ number_format(Cart::total()) }}円</td>
                                 </tr>
                             @endif
 
                         </table>
-                        <a class="btn-checkout" href="#" wire:click.prevent="checkout">PROCEED TO CHECKOUT</a>
+                        <a class="btn-checkout" href="#" wire:click.prevent="checkout">チェックアウトに進む</a>
                     </form>
                 </div>
                 @else
                     <div class=" col-lg-12 text-center pt-5 pb-5">
-                        <h1>Chua co san pham</h1>
-                        <p>Mua ngay bay gio</p>
-                        <a href="/shop" class="btn btn-success">Shop now</a>
+                        <h1>商品なし</h1>
+                        <p>今すぐ購入</p>
+                        <a href="/shop" class="btn btn-success">購入</a>
                     </div>
                 @endif
             </div>

@@ -13,9 +13,9 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-lg-6">All Categories</div>
+                            <div class="col-lg-6">全てカテゴリ－</div>
                             <div class="col-lg-6">
-                                <a href="{{route('admin.addcategory')}}" class="btn btn-success pull-right">Them Danh Muc</a>
+                                <a href="{{route('admin.addcategory')}}" class="btn btn-success pull-right">カテゴリを追加する</a>
                             </div>
                         </div>
                     </div>
@@ -27,9 +27,9 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Category Name</th>
-                                    <th>Slug</th>
-                                    <th>Action</th>
+                                    <th>カテゴリ名</th>
+                                    <th>スラッグ名</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>

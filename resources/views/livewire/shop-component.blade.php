@@ -4,10 +4,10 @@
             <div class="row">
                 <div class="col-xl-12 text-center">
                     <h1 class="title-shop">
-                        SHOP
+                        ショップ
                     </h1>
                     <p class="text-shop">
-                        Home: <span>Shop</span>
+                        ホーム: <span>ショップ</span>
                     </p>
                 </div>
             </div>
@@ -128,6 +128,7 @@
                             </li>
                         @endforeach
                     </ul>
+                    
                 </div>
             </div>
         </div>

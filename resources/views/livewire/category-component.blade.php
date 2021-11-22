@@ -7,7 +7,7 @@
                         {{$category_name}}
                     </h1>
                     <p class="text-shop">
-                        Home: Shop: <span>{{$category_name}}</span>
+                        ホーム:: ショップ: <span>{{$category_name}}</span>
                     </p>
                 </div>
             </div>
@@ -22,11 +22,11 @@
                         <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12 pt-5">
                             <div class="filter">
                                 <select class="form-select css-border" aria-label="Default select example" wire:model="sorting">
-                                    <option value="default" selected>Default sorting</option>
-                                    <option value="date">Sort by newness</option>
-                                    <option value="featured">Sort by featured</option>
-                                    <option value="price">Sort by price: low to high</option>
-                                    <option value="price-desc">Sort by price: high to low</option>
+                                    <option value="default" selected>デフォルト</option>
+                                    <option value="date">新着順</option>
+                                    <option value="featured">おすすめ順</option>
+                                    <option value="price">価格の安い順</option>
+                                    <option value="price-desc">価格の高い順</option>
                                   </select>
                                 
                             </div>
@@ -76,7 +76,7 @@
                     <div class="line mt-5"></div>
     
                     <p class="danhmuc-hoa pt-5">
-                        PRODUCT CATEGORIES
+                        商品のカテゴリー
                     </p>
                     <ul>
                         @foreach ($categories as $item)
@@ -89,32 +89,39 @@
                     </ul>
                     <div class="line mt-5"></div>
                     <p class="danhmuc-hoa pt-5">
-                        POPULAR PRODUCTS
+                        人気のある商品
                     </p>
                     <ul>
-                        <li class="content-spnb d-flex">
-                            <a href="">
-                                <img src="{{asset('images/shop4.jpg')}}" class="img-fluid img-spnb" alt="">
-    
-                            </a>
-                            <div class="content-body">
-                                <div class="product-name">
-                                    <span class="text-product">SWEET SURPRISES BOUQUET</span>
+                        @foreach ($popular_product as $p_product)
+
+                            <li class="content-spnb d-flex">
+                                <a href="{{ route('product.details', ['slug' => $product->slug]) }}">
+                                    <img src="{{ asset('images') }}/{{ $p_product->image }}"
+                                        class="img-fluid img-spnb" alt="">
+
+                                </a>
+                                <div class="content-body">
+                                    <div class="product-name">
+                                        <a href="{{ route('product.details', ['slug' => $product->slug]) }}">
+                                        <span class="text-product">{{$p_product->name}}</span>
+                                    </a>
+                                    </div>
+                                    <div class="danhgia-spnb">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="gia-spnb">
+                                        <span>{{$p_product->regular_price}}円</span>
+                                    </div>
                                 </div>
-                                <div class="danhgia-spnb">
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <div class="gia-spnb">
-                                    <span>6000円</span>
-                                </div>
-                            </div>
-    
-                        </li>
+
+                            </li>
+                        @endforeach
                     </ul>
+                    
                 </div>
             </div>
         </div>

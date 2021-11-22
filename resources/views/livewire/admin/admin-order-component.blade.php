@@ -4,7 +4,7 @@
             <div class="col-lg-12">
                 <div class="card" style="overflow: auto">
                     <div class="card-header">
-                        All Orders
+                        全て注文
                     </div>
                     <div class="card-body">
                         @if (Session::has('order_message'))

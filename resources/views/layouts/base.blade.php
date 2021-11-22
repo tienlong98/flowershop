@@ -28,19 +28,19 @@
                 <div class="list-menu">
                     <ul>
                         <li>
-                            <a style="color: #544e48" href="/">Home</a>
+                            <a style="color: #544e48" href="/">ホーム</a>
                         </li>
                         <li>
-                            <a style="color: #544e48" href="/shop">Shop</a>
+                            <a style="color: #544e48" href="/shop">ショップ</a>
                         </li>
                         <li>
-                            <a style="color: #544e48" href="/about">About</a>
+                            <a style="color: #544e48" href="/about">チーム</a>
                         </li>
                         <li>
-                            <a style="color: #544e48" href="/contact">Contact</a>
+                            <a style="color: #544e48" href="/contact">コンタクト</a>
                         </li>
                         <li>
-                            <a style="color: #544e48" href="/shop">Gallery</a>
+                            <a style="color: #544e48" href="/shop">ギャラリー</a>
                         </li>
                     </ul>
                 </div>
@@ -56,14 +56,16 @@
                             @auth
                                 @if (Auth::user()->utype === 'ADM')
                                     <li class="css-user">
-                                        <a style="color: #544e48" class="fix-hover" href="">{{ Auth::user()->name }} <i
-                                                class="fas fa-angle-down ml-1"></i></a>
+                                        <a style="color: #544e48" class="fix-hover" href="">{{ Auth::user()->name }}
+                                            <i class="fas fa-angle-down ml-1"></i></a>
                                         <div class="list-menu-user">
                                             <div class="mt-2"><a
                                                     href="{{ route('admin.dashboard') }}">ダッシュボード</a></div>
-                                            <div class="mt-2"><a href="{{ route('admin.categories') }}">カテゴリー</a>
+                                            <div class="mt-2"><a
+                                                    href="{{ route('admin.categories') }}">カテゴリー</a>
                                             </div>
-                                            <div class="mt-2"><a href="{{ route('admin.product') }}">製品</a></div>
+                                            <div class="mt-2"><a href="{{ route('admin.product') }}">製品</a>
+                                            </div>
                                             <div class="mt-2"><a href="{{ route('admin.coupons') }}">クーポン</a>
                                             </div>
                                             <div class="mt-2"><a href="{{ route('admin.orders') }}">注文</a></div>
@@ -78,25 +80,26 @@
                                         </div>
                                     </li>
                                 @else
-                                    <li class="css-user">
-                                        <a class="fix-hover" href="">{{ Auth::user()->name }}<i
-                                                class="fas fa-angle-down ml-1"></i></a>
-                                        <div class="list-menu-user">
-                                            <div class="mt-2"><a
-                                                    href="{{ route('user.dashboard') }}">ダッシュボード</a></div>
-                                            <div class="mt-2"><a href="{{ route('user.orders') }}">注文</a></div>
-                                            <div class="mt-2"><a href="{{ route('logout') }}"
-                                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit('');">ログアウト</a>
-                                            </div>
-                                            <form id="logout-form" action="{{ route('logout') }}" method="POST">
-                                                @csrf
-                                            </form>
+                                <li class="css-user">
+                                    <a style="color: #544e48" class="fix-hover" href="">{{ Auth::user()->name }}<i
+                                            class="fas fa-angle-down ml-1"></i></a>
+                                    <div class="list-menu-user">
+                                        <div class="mt-2"><a
+                                                href="{{ route('user.dashboard') }}">ダッシュボード</a></div>
+                                        <div class="mt-2"><a href="{{ route('user.orders') }}">注文</a></div>
+                                        <div class="mt-2"><a href="{{ route('logout') }}"
+                                                onclick="event.preventDefault(); document.getElementById('logout-form').submit('');">ログアウト</a>
                                         </div>
-                                        </a>
-                                    </li>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                    
+                                </li>
                                 @endif
                             @else
-                                <li><a style="color: #544e48" href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i></a></li>
+                                <li><a style="color: #544e48" href="{{ route('login') }}"><i
+                                            class="fas fa-sign-in-alt"></i></a></li>
                             @endauth
                         @endif
                     </ul>
@@ -113,19 +116,19 @@
                 </label>
                 <ul>
                     <li>
-                        <a style="color: #544e48" href="/">Home</a>
+                        <a class="nav-item-mobile" style="color: #544e48" href="/">Home</a>
                     </li>
                     <li>
-                        <a style="color: #544e48" href="/shop">Shop</a>
+                        <a class="nav-item-mobile" style="color: #544e48" href="/shop">Shop</a>
                     </li>
                     <li>
-                        <a style="color: #544e48" href="/about">About</a>
+                        <a class="nav-item-mobile" style="color: #544e48" href="/about">About</a>
                     </li>
                     <li>
-                        <a style="color: #544e48" href="/contact">Contact</a>
+                        <a class="nav-item-mobile" style="color: #544e48" href="/contact">Contact</a>
                     </li>
                     <li>
-                        <a style="color: #544e48" href="/shop">Gallery</a>
+                        <a class="nav-item-mobile" style="color: #544e48" href="/shop">Gallery</a>
                     </li>
                 </ul>
             </div>

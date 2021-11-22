@@ -46,6 +46,8 @@ class CategoryComponent extends Component
 
         }
         $categories=Category::all();
-        return view('livewire.category-component', ['products'=>$products, 'categories'=>$categories, 'category_name'=>$category_name])->layout('layouts.base');
+        $popular_product=Product::inRandomOrder()->limit(4)->get();
+        $related_product=Product::where('category_id')->inRandomOrder()->limit(5)->get();
+        return view('livewire.category-component', ['products'=>$products, 'categories'=>$categories, 'category_name'=>$category_name,'popular_product'=>$popular_product,'related_product'=>$related_product])->layout('layouts.base');
     }
 }

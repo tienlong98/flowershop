@@ -7,9 +7,9 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-lg-6">All Coupons</div>
+                            <div class="col-lg-6">全てクーポン</div>
                             <div class="col-lg-6">
-                                <a href="{{route('admin.addcoupon')}}" class="btn btn-success pull-right">Them Coupons</a>
+                                <a href="{{route('admin.addcoupon')}}" class="btn btn-success pull-right">クーポンを追加する</a>
                             </div>
                         </div>
                     </div>
@@ -21,12 +21,12 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Coupon Code</th>
-                                    <th>Coupon Type</th>
-                                    <th> Value</th>
-                                    <th>Cart Value</th>
+                                    <th>クーポンコード</th>
+                                    <th>クーポンタイプ</th>
+                                    <th> クーポン値</th>
+                                    <th>クーポンカートの価値</th>
 
-                                    <th>Action</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>

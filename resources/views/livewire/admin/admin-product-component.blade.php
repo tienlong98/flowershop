@@ -16,11 +16,10 @@
                     <div class="card-header">
                         <div class="row">
                             <div class="col-lg-6">
-                                All Product
+                                全て商品
                             </div>
                             <div class="col-lg-6">
-                                <a href="{{ route('admin.addproduct') }}" class="btn btn-success pull-right">Them San
-                                    Pham</a>
+                                <a href="{{ route('admin.addproduct') }}" class="btn btn-success pull-right">商品を追加する</a>
                             </div>
                         </div>
                     </div>
@@ -35,25 +34,25 @@
                                         ID
                                     </th>
                                     <th>
-                                        Image
+                                        画像
                                     </th>
                                     <th>
-                                        Name
+                                        商品名
                                     </th>
                                     <th>
-                                        Stock
+                                        ストック
                                     </th>
                                     <th>
-                                        Price
+                                        価格
                                     </th>
                                     <th>
-                                        Category
+                                        カテゴリー
                                     </th>
                                     <th>
-                                        Date
+                                        日付
                                     </th>
                                     <th>
-                                        Action
+                                        
                                     </th>
                                 </tr>
                             </thead>

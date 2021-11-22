@@ -29,19 +29,19 @@
                 <div class="list-menu">
                     <ul>
                         <li>
-                            <a href="/">Home</a>
+                            <a href="/">ホーム</a>
                         </li>
                         <li>
-                            <a href="/shop">Shop</a>
+                            <a href="/shop">ショップ</a>
                         </li>
                         <li>
-                            <a href="/about">About</a>
+                            <a href="/about">チーム</a>
                         </li>
                         <li>
-                            <a href="/contact">Contact</a>
+                            <a href="/contact">コンタクト</a>
                         </li>
                         <li>
-                            <a href="/contact">Gallery</a>
+                            <a href="/contact">ギャラリー</a>
                         </li>
                     </ul>
                 </div>
@@ -95,7 +95,7 @@
                                                 @csrf
                                             </form>
                                         </div>
-                                        </a>
+                                        
                                     </li>
                                 @endif
                             @else
@@ -116,19 +116,19 @@
                 </label>
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <a class="nav-item-mobile" href="/">ホーム</a>
                     </li>
                     <li>
-                        <a href="/shop">Shop</a>
+                        <a class="nav-item-mobile" href="/shop">ショップ</a>
                     </li>
                     <li>
-                        <a href="/about">About</a>
+                        <a class="nav-item-mobile" href="/about">チーム</a>
                     </li>
                     <li>
-                        <a href="/contact">Contact</a>
+                        <a class="nav-item-mobile" href="/contact">コンタクト</a>
                     </li>
                     <li>
-                        <a href="/contact">Gallery</a>
+                        <a class="nav-item-mobile" href="/contact">ギャラリー</a>
                     </li>
                 </ul>
             </div>
