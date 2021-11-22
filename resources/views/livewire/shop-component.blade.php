@@ -23,11 +23,11 @@
                             <div class="filter">
                                 <select class="form-select css-border" aria-label="Default select example"
                                     wire:model="sorting">
-                                    <option value="default" selected>Default sorting</option>
-                                    <option value="date">Sort by newness</option>
-                                    <option value="featured">Sort by featured</option>
-                                    <option value="price">Sort by price: low to high</option>
-                                    <option value="price-desc">Sort by price: high to low</option>
+                                    <option value="default" selected>デフォルト</option>
+                                    <option value="date">新着順</option>
+                                    <option value="featured">おすすめ順</option>
+                                    <option value="price">価格の安い順</option>
+                                    <option value="price-desc">価格の高い順</option>
                                 </select>
 
                             </div>
@@ -69,8 +69,7 @@
                                         </a>
                                         <p class="giasp ">{{ $product->regular_price }}円</p>
                                         <a href="" class="themgiohang"
-                                            wire:click.prevent="store('{{ $product->id }}','{{ $product->name }}','{{ $product->regular_price }}')">Add
-                                            to Cart </a>
+                                            wire:click.prevent="store('{{ $product->id }}','{{ $product->name }}','{{ $product->regular_price }}')">カートに追加 </a>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +82,7 @@
                     <div class="line mt-5"></div>
 
                     <p class="danhmuc-hoa pt-5">
-                        PRODUCT CATEGORIES
+                        商品のカテゴリー
                     </p>
                     <ul>
                         @foreach ($categories as $item)
@@ -97,7 +96,7 @@
                     </ul>
                     <div class="line mt-5"></div>
                     <p class="danhmuc-hoa pt-5">
-                        POPULAR PRODUCTS
+                        人気のある商品
                     </p>
                     <ul>
                         @foreach ($popular_product as $p_product)

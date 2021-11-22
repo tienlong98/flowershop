@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+p {
+  font-family: 'Kaisei Tokumin', serif !important;
+}
+
+h1,
+h2 {
+  font-family: 'Petit Formal Script', cursive !important;
+}
+
 .mauden {
   color: #000000 !important;
 }
