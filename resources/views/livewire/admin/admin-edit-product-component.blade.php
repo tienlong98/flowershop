@@ -23,21 +23,21 @@
                                 <label for="" class="col-lg-4 control-label">商品名</label>
                                 <div class="col-lg-4">
                                     <input type="text" name="" id="" placeholder="商品名"
-                                        class="form-control input-lg" wire:model="name" wire:keyup='generateslug'>
+                                        class="form-control input-lg" wire:model="name" wire:keyup='generateslug' required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="" class="col-lg-4 control-label">商品スラッグ</label>
                                 <div class="col-lg-4">
                                     <input type="text" name="" id="" placeholder="Product Slug"
-                                        class="form-control input-lg" wire:model="slug">
+                                        class="form-control input-lg" wire:model="slug" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="" class="col-lg-4 control-label">簡単な説明</label>
                                 <div class="col-lg-4">
                                     <textarea name="" placeholder="簡単な説明" id="" cols="30" rows="10"
-                                        wire:model="short_descripsiton"></textarea>
+                                        wire:model="short_descripsiton" required></textarea>
                                 </div>
                             </div>
 
@@ -45,27 +45,27 @@
                                 <label for="" class="col-lg-4 control-label">説明</label>
                                 <div class="col-lg-4">
                                     <textarea name="" class="form-control" placeholder="説明" id="" cols="30"
-                                        rows="10" wire:model="descripsitone"></textarea>
+                                        rows="10" wire:model="descripsitone" required></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="" class="col-lg-4 control-label">通常価格</label>
                                 <div class="col-lg-4">
                                     <input type="number" name="" id="" placeholder="通常価格"
-                                        class="form-control input-lg" wire:model="regular_price">
+                                        class="form-control input-lg" wire:model="regular_price" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="" class="col-lg-4 control-label">販売価格</label>
                                 <div class="col-lg-4">
                                     <input type="number" name="" id="" placeholder="販売価格"
-                                        class="form-control input-lg" wire:model="sale_price">
+                                        class="form-control input-lg" wire:model="sale_price" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="" class="col-lg-4 control-label">ストック</label>
                                 <div class="col-lg-4">
-                                    <select name="" id="" class="form-control" wire:model="stock_status">
+                                    <select name="" id="" class="form-control" wire:model="stock_status" required>
                                         <option value="instock">在庫あり</option>
                                         <option value="outofstock">在庫切れ</option>
                                     </select>
@@ -74,7 +74,7 @@
                             <div class="form-group">
                                 <label for="" class="col-lg-4 control-label">特徴</label>
                                 <div class="col-lg-4">
-                                    <select name="" id="" class="form-control" wire:model="featured">
+                                    <select name="" id="" class="form-control" wire:model="featured" required>
                                         <option value="0">ある</option>
                                         <option value="1">なし</option>
                                     </select>
@@ -84,7 +84,7 @@
                                 <label for="" class="col-lg-4 control-label">数量</label>
                                 <div class="col-lg-4">
                                     <input type="number" name="" id="" placeholder="数量"
-                                        class="form-control input-lg" wire:model="quantity">
+                                        class="form-control input-lg" wire:model="quantity" required>
                                 </div>
                             </div>
                             <div class="form-group">
