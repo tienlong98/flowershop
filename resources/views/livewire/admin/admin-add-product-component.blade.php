@@ -60,7 +60,7 @@
                                 <label for="" class="col-lg-4 control-label">販売価格</label>
                                 <div class="col-lg-4">
                                     <input type="number" name="" id="" placeholder="販売価格"
-                                        class="form-control input-lg" wire:model="sale_price" required>
+                                        class="form-control input-lg" wire:model="sale_price" >
                                 </div>
                             </div>
                             <div class="form-group">
