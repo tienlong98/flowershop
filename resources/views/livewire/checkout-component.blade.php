@@ -4,10 +4,10 @@
             <div class="row">
                 <div class="col-xl-12 text-center">
                     <h1 class="title-shop">
-                        CHECKOUT
+                        チェックアウト
                     </h1>
                     <p class="text-shop">
-                        Home: <span>Checkout</span>
+                        ホーム: <span>チェックアウト</span>
                     </p>
                 </div>
             </div>
@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h3 class="bill-detail mt-5 mb-3">
-                            Billing details
+                            支払明細
                         </h3>
 
                     </div>
@@ -30,7 +30,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label for="" class="col-lg-12">
-                                        First Name
+                                        姓
                                     </label>
                                     <div class="col-lg-12">
                                         <input type="text" name="" id="" class="form-control" required
@@ -42,7 +42,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label for="" class="col-lg-12">
-                                        Last Name
+                                        名
                                     </label>
                                     <div class="col-lg-12">
                                         <input type="text" name="" id="" class="form-control" required
@@ -54,7 +54,7 @@
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label for="" class="col-lg-12">
-                                        Zip Code
+                                        郵便番号
                                     </label>
                                     <div class="col-lg-12">
                                         <input type="number" name="" id="" class="form-control" required
@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="" class="col-lg-12">
-                                        Address
+                                        住所
                                     </label>
                                     <div class="col-lg-12">
                                         <input type="text" name="" id="" class="form-control" required
@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="" class="col-lg-12">
-                                        Phone
+                                        電話番号
                                     </label>
                                     <div class="col-lg-12">
                                         <input type="number" name="" id="" class="form-control" required
@@ -84,7 +84,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="" class="col-lg-12">
-                                        Email
+                                        電子メール
                                     </label>
                                     <div class="col-lg-12">
                                         <input type="email" name="" id="" class="form-control" required
@@ -100,7 +100,7 @@
 
                         <div class="form-group">
                             <label for="" class="col-lg-12">
-                                Order notes (optional)
+                                注文ノート
                             </label>
                             <div class="col-lg-12">
                                 <textarea class="form-control " id="exampleFormControlTextarea1" rows="10" cols="40"
@@ -114,7 +114,7 @@
                     <div class="col-lg-12">
                         <label for="" class="">
                             <input type="checkbox" name="" id="" value="1" wire:model="ship_to_different">
-                            <span>Tặng Hoa</span>
+                            <span>贈り物</span>
                         </label>
                     </div>
                     @if ($ship_to_different)
@@ -124,7 +124,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="" class="col-lg-12">
-                                            First Name
+                                            姓
                                         </label>
                                         <div class="col-lg-12">
                                             <input type="text" name="" id="" class="form-control" required
@@ -136,7 +136,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="" class="col-lg-12">
-                                            Last Name
+                                            名
                                         </label>
                                         <div class="col-lg-12">
                                             <input type="text" name="" id="" class="form-control" required
@@ -148,7 +148,7 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label for="" class="col-lg-12">
-                                            Zip Code
+                                            郵便番号
                                         </label>
                                         <div class="col-lg-12">
                                             <input type="number" name="" id="" class="form-control" required
@@ -158,7 +158,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="" class="col-lg-12">
-                                            Address
+                                            住所
                                         </label>
                                         <div class="col-lg-12">
                                             <input type="text" name="" id="" class="form-control" required
@@ -168,7 +168,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="" class="col-lg-12">
-                                            Phone
+                                            電話番号
                                         </label>
                                         <div class="col-lg-12">
                                             <input type="number" name="" id="" class="form-control" required
@@ -178,7 +178,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="" class="col-lg-12">
-                                            Email
+                                            電子メール
                                         </label>
                                         <div class="col-lg-12">
                                             <input type="mail" name="" id="" class="form-control" required
@@ -191,7 +191,7 @@
                         <div class=" col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="form-group">
                                 <label for="" class="col-lg-12">
-                                    Order notes (optional)
+                                    注文ノート
                                 </label>
                                 <div class="col-lg-12">
                                     <textarea class="form-control " id="exampleFormControlTextarea1" rows="10"
@@ -243,25 +243,25 @@
                         <label for="" class="">
                             <input type="radio" name="payment-method" id="payment=cod" value="cod"
                                 wire:model="paymentmode">
-                            <span>Thanh toán khi nhận hàng</span>
+                            <span>配達の支払い</span>
                         </label>
                     </div>
                     <div class="col-lg-12">
                         <label for="" class="">
                             <input type="radio" name="payment-method" id="payment=card" value="card"
                                 wire:model="paymentmode">
-                            <span>Thanh toán bằng thẻ Credit</span>
+                            <span>クレジットカードで支払う</span>
                         </label>
                     </div>
                     <div class="col-lg-12">
                         <label for="" class="">
                             <input type="radio" name="payment-method" id="payment=paypal" value="paypal"
                                 wire:model="paymentmode">
-                            <span>Thanh toán bằng PayPal</span>
+                            <span>PayPalによる支払い</span>
                         </label>
                     </div>
                     <div class="place_order mt-5 mb-5">
-                        <button type="submit" class="button-contact"> PLACE ORDER</button>
+                        <button type="submit" class="button-contact"> 注文する</button>
                     </div>
 
                 </div>

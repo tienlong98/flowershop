@@ -90,9 +90,9 @@
                                 <p class="tensp ">{{ $item->name }}</p>
 
                                 <p class="giasp "><span
-                                        class="giabd">{{ $item->regular_price }}</span>{{ $item->sale_price }}円
+                                        class="giabd">{{ number_format($item->regular_price) }}</span>{{ number_format($item->sale_price )}}円
                                 </p>
-                                <a href="" class="themgiohang ">Add to Cart </a>
+                                <a href="" class="themgiohang "wire:click.prevent="store('{{ $item->id }}','{{ $item->name }}','{{ $item->sale_price }}')">追加する</a>
                             </div>
                         </div>
                     </div>

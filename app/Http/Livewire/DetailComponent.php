@@ -15,7 +15,7 @@ class DetailComponent extends Component
     }
     public function store($product_id, $product_name, $product_price){
         Cart::add($product_id, $product_name,1, $product_price)->associate('App\Models\Product');
-        session()->flash('Tin_nhan_thanh_cong', 'Da_them_gio_Hang');
+        session()->flash('Tin_nhan_thanh_cong', 'カートに追加されました');
         return redirect()->route('product.cart');
     }
     public function render()

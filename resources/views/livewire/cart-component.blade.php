@@ -53,7 +53,7 @@
                                             <td><a
                                                     href="{{ route('product.details', ['slug' => $item->model->slug]) }}">{{ $item->model->name }}</a>
                                             </td>
-                                            <td>{{ $item->model->regular_price }}円</td>
+                                            <td>{{ number_format($item->model->regular_price) }}円</td>
                                             <td>
                                                 <a href=""
                                                     wire:click.prevent="increaseQuantity('{{ $item->rowId }}')"><i
@@ -63,7 +63,7 @@
                                                     wire:click.prevent="decreaseQuantity('{{ $item->rowId }}')"><i
                                                         class="fas fa-minus-circle"></i></a>
                                             </td>
-                                            <td>{{ $item->subtotal }}円</td>
+                                            <td>{{ number_format($item->subtotal )}}円</td>
                                         </tr>
 
                                     @endforeach
@@ -97,7 +97,7 @@
                                                     wire:click.prevent="decreaseQuantity('{{ $item->rowId }}')"><i
                                                         class="fas fa-minus-circle"></i></a>
                                             </td>
-                                            <td>{{ $item->subtotal}}円</td>
+                                            <td>{{ number_format($item->subtotal)}}円</td>
                                         </tr>
                                     @endforeach
                                 </tbody>

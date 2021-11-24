@@ -7,7 +7,7 @@
                         {{ $product->name }}
                     </h1>
                     <p class="text-shop">
-                        Home: Bouquets: <span>{{ $product->name }}</span>
+                        ホーム:商品: <span>{{ $product->name }}</span>
                     </p>
                 </div>
             </div>
@@ -44,8 +44,7 @@
                                     <form action="" method="get">
                                         <input type="number" value="1" name="" id="">
                                         <a href="" class="button-addcart"
-                                            wire:click.prevent="store('{{ $product->id }}','{{ $product->name }}','{{ $product->regular_price }}')">ADD
-                                            TO CART</a>
+                                            wire:click.prevent="store('{{ $product->id }}','{{ $product->name }}','{{ $product->regular_price }}')">追加する</a>
                                     </form>
                                 </div>
                             </div>
@@ -56,13 +55,13 @@
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
                                             href="#nav-home" role="tab" aria-controls="nav-home"
-                                            aria-selected="true">DESCRIPTION</a>
+                                            aria-selected="true">説明</a>
                                         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
                                             href="#nav-profile" role="tab" aria-controls="nav-profile"
-                                            aria-selected="false">THONG TIN</a>
+                                            aria-selected="false">商品情報</a>
                                         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
                                             href="#nav-contact" role="tab" aria-controls="nav-contact"
-                                            aria-selected="false">REVIEWS</a>
+                                            aria-selected="false">レビュー</a>
                                     </div>
                                 </nav>
                                 <div class="tab-content" id="nav-tabContent">
@@ -104,7 +103,7 @@
                     <div class="line mt-5"></div>
 
                     <p class="danhmuc-hoa pt-5">
-                        PRODUCT CATEGORIES
+                        商品のカテゴリー
                     </p>
                     <ul>
                         @foreach ($categories as $item)
@@ -119,7 +118,7 @@
                     </ul>
                     <div class="line mt-5"></div>
                     <p class="danhmuc-hoa pt-5">
-                        POPULAR PRODUCTS
+                        人気のある商品
                     </p>
                     <ul>
                         @foreach ($popular_product as $p_product)

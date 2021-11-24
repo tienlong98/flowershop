@@ -67,9 +67,9 @@
                                         <a href="{{ route('product.details', ['slug' => $product->slug]) }}">
                                             <p class="tensp ">{{ $product->name }}</p>
                                         </a>
-                                        <p class="giasp ">{{ $product->regular_price }}円</p>
+                                        <p class="giasp ">{{ number_format($product->regular_price) }}円</p>
                                         <a href="" class="themgiohang"
-                                            wire:click.prevent="store('{{ $product->id }}','{{ $product->name }}','{{ $product->regular_price }}')">カートに追加 </a>
+                                            wire:click.prevent="store('{{ $product->id }}','{{ $product->name }}','{{ $product->regular_price }}')">追加する </a>
                                     </div>
                                 </div>
                             </div>

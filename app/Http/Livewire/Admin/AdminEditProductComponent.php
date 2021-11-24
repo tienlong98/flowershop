@@ -69,7 +69,7 @@ class AdminEditProductComponent extends Component
             $product->image = $imageName;
         }
         $product->save();
-        session()->flash('Tin_nhan_thanh_cong', 'Update San Pham Thanh Cong');
+        session()->flash('Tin_nhan_thanh_cong', '編集しました。');
 
     }
     public function render()

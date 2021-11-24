@@ -27,12 +27,12 @@ class CartComponent extends Component
     }
     public function destroy($rowId){
         Cart::remove($rowId);
-        session()->flash('Tin_nhan_thanh_cong', 'Da_Xoa_San_Pham');
+        session()->flash('Tin_nhan_thanh_cong', '削除されました');
     }
     public function applyCoupon(){
         $coupon=Coupon::where('code', $this->couponCode)->where('cart_value', '<=', Cart::subtotal())->first();
         if (!$coupon) {
-            session()->flash('Tin_nhan_thanh_cong', 'Them Coupon thanh Cong');
+            session()->flash('Tin_nhan_thanh_cong', 'クーポンを追加しました。');
             return;
         }
         session()->put('coupon', [
