@@ -34,14 +34,12 @@
                         <li>
                             <a href="/shop">ショップ</a>
                         </li>
-                        <li>
-                            <a href="/about">チーム</a>
-                        </li>
+                        
                         <li>
                             <a href="/contact">コンタクト</a>
                         </li>
                         <li>
-                            <a href="/contact">ギャラリー</a>
+                            <a href="/gallery">ギャラリー</a>
                         </li>
                     </ul>
                 </div>
@@ -70,6 +68,7 @@
                                             <div class="mt-2"><a href="{{ route('admin.coupons') }}">クーポン</a>
                                             </div>
                                             <div class="mt-2"><a href="{{ route('admin.orders') }}">注文</a></div>
+                                            <div class="mt-2"><a href="{{ route('admin.gallerys') }}">ギャラリー</a></div>
 
                                             <div class="mt-2"><a href="{{ route('logout') }}"
                                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit('');">ログアウト</a>
@@ -121,14 +120,12 @@
                     <li>
                         <a class="nav-item-mobile" href="/shop">ショップ</a>
                     </li>
-                    <li>
-                        <a class="nav-item-mobile" href="/about">チーム</a>
-                    </li>
+                    
                     <li>
                         <a class="nav-item-mobile" href="/contact">コンタクト</a>
                     </li>
                     <li>
-                        <a class="nav-item-mobile" href="/contact">ギャラリー</a>
+                        <a class="nav-item-mobile" href="/gallery">ギャラリー</a>
                     </li>
                 </ul>
             </div>

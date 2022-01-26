@@ -35,7 +35,7 @@ class AdminAddCouponsComponent extends Component
         $coupon->cart_value = $this->cart_value;
 
         $coupon->save();
-        session()->flash('Tin_nhan_thanh_cong', 'クーポンを追加しました。');
+        session()->flash('Tin_nhan_thanh_cong', '追加されました。');
     }
     public function render()
     {

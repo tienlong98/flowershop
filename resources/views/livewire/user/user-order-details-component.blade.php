@@ -43,6 +43,7 @@
                                                 <h5>{{ $item->quantity }}</h5>
                                             </td>
                                             <td>{{ $item->price * $item->quantity }}円</td>
+                                            <td><a href="{{route('user.review',['order_item_id'=>$item->id])}}"><i class="far fa-comments"></i></a></td>
                                         </tr>
 
                                     @endforeach

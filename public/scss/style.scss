@@ -95,6 +95,11 @@
     }
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 p {
     font-family: 'Kaisei Tokumin', serif !important;
 }
@@ -386,6 +391,7 @@ h2 {
     .about-content {
         text-align: center;
         .about-title {
+            margin-top: 50px;
             margin-bottom: 50px;
         }
         .naiyo {
@@ -445,22 +451,6 @@ h2 {
     }
 }
 
-// .slide-birthday {
-//     background-color: #fef7f5;
-//     .title-slide {
-//         font-size: 42px;
-//         margin-top: 150px;
-//         margin-bottom: 100px;
-//     }
-//     .slide-hana {
-//         margin-bottom: 70px;
-//         .carousel {
-//             .carousel-inner {
-//                 .carousel-item {}
-//             }
-//         }
-//     }
-// }
 .bosuutap {
     background-image: url(../images/bg-home.png);
     background-repeat: no-repeat;
@@ -831,7 +821,86 @@ h2 {
     }
 }
 
+.content-review {
+    .rating-star {
+        input {
+            display: none;
+        }
+        label {
+            color: #ddd;
+            cursor: pointer;
+            float: right;
+            &::before {
+                font-family: FontAwesome;
+                content: "\f005";
+                font-size: 1.2rem;
+                margin: 3px;
+                display: inline-block;
+            }
+        }
+        >input:checked~label {
+            color: #a7896a;
+        }
+        &:not(:checked)>label:hover {
+            color: #a7896a;
+            ~label {
+                color: #a7896a;
+            }
+        }
+        >input:checked~label:hover {
+            color: #ad967c;
+        }
+    }
+    .comment-review {
+        .from_control {
+            padding: 11px;
+            border: 1px solid #a7896a;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .form-control {
+            border: 1px solid #a7896a;
+        }
+        .sendmess {
+            .button-review {
+                @include button();
+            }
+        }
+    }
+}
+
+.title-review {
+    color: #a7896a;
+}
+
+.thuvienanh {
+    position: relative;
+    column-count: 4;
+    padding: 20px;
+    .image {
+        display: inline-block;
+        margin-bottom: 10px;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .myimg {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            cursor: zoom-in;
+        }
+        p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
 @media screen and (max-width:75em) {
+    .thuvienanh {
+        column-count: 4;
+    }
     .follow {
         .title-fl {
             padding: 0 100px;
@@ -840,6 +909,9 @@ h2 {
 }
 
 @media screen and (max-width:62em) {
+    .thuvienanh {
+        column-count: 3;
+    }
     .follow {
         .title-fl {
             padding: 0px;
@@ -869,6 +941,9 @@ h2 {
 }
 
 @media only screen and (max-width: 48em) {
+    .thuvienanh {
+        column-count: 2;
+    }
     .home {
         .content1 {
             .content {
@@ -910,6 +985,9 @@ h2 {
 }
 
 @media only screen and (max-width: 36em) {
+    .thuvienanh {
+        column-count: 1;
+    }
     .home {
         .content1 {
             .content {
@@ -932,6 +1010,7 @@ h2 {
             h1 {
                 font-size: 30px;
                 left: 15%;
+                top: 170px;
             }
         }
     }

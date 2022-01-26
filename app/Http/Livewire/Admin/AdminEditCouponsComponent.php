@@ -43,7 +43,7 @@ class AdminEditCouponsComponent extends Component
         $coupon->cart_value = $this->cart_value;
 
         $coupon->save();
-        session()->flash('Tin_nhan_thanh_cong', '編集しました。');
+        session()->flash('Tin_nhan_thanh_cong', '編集されました。');
     }
     public function render()
     {

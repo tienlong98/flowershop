@@ -29,7 +29,7 @@ class AdminEditCategoryComponent extends Component
         $category->name = $this->name;
         $category->slug = $this->slug;
         $category->save();
-        session()->flash('Tin_nhan_thanh_cong', '編集しました。');
+        session()->flash('Tin_nhan_thanh_cong', '編集されました。');
 
 
     }

@@ -51,7 +51,7 @@ class AdminAddProductComponent extends Component
        $this->image->storeAs('/',$imageName);
        $product->image = $imageName;
        $product->save();
-       session()->flash('Tin_nhan_thanh_cong', '追加しました。');
+       session()->flash('Tin_nhan_thanh_cong', '追加されました。');
 
 
 

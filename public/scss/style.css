@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 p {
   font-family: 'Kaisei Tokumin', serif !important;
 }
@@ -377,6 +382,7 @@ h2 {
 }
 
 .about .about-content .about-title {
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -1122,13 +1128,121 @@ h2 {
   color: white;
 }
 
+.content-review .rating-star input {
+  display: none;
+}
+
+.content-review .rating-star label {
+  color: #ddd;
+  cursor: pointer;
+  float: right;
+}
+
+.content-review .rating-star label::before {
+  font-family: FontAwesome;
+  content: "\f005";
+  font-size: 1.2rem;
+  margin: 3px;
+  display: inline-block;
+}
+
+.content-review .rating-star > input:checked ~ label {
+  color: #a7896a;
+}
+
+.content-review .rating-star:not(:checked) > label:hover {
+  color: #a7896a;
+}
+
+.content-review .rating-star:not(:checked) > label:hover ~ label {
+  color: #a7896a;
+}
+
+.content-review .rating-star > input:checked ~ label:hover {
+  color: #ad967c;
+}
+
+.content-review .comment-review .from_control {
+  padding: 11px;
+  border: 1px solid #a7896a;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.content-review .comment-review .form-control {
+  border: 1px solid #a7896a;
+}
+
+.content-review .comment-review .sendmess .button-review {
+  color: #3c3834;
+  background-color: #ffffff;
+  letter-spacing: 0.12em;
+  padding: 11px 35px;
+  cursor: pointer;
+  border: 1px solid #3c3834;
+  -webkit-box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+          box-shadow: 0px 0px 0 1px #ffffff, 3px 3px 0 0 #000000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.content-review .comment-review .sendmess .button-review:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.title-review {
+  color: #a7896a;
+}
+
+.thuvienanh {
+  position: relative;
+  -webkit-column-count: 4;
+          column-count: 4;
+  padding: 20px;
+}
+
+.thuvienanh .image {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.thuvienanh .image a {
+  text-decoration: none;
+  color: black;
+}
+
+.thuvienanh .image .myimg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.thuvienanh .image p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 @media screen and (max-width: 75em) {
+  .thuvienanh {
+    -webkit-column-count: 4;
+            column-count: 4;
+  }
   .follow .title-fl {
     padding: 0 100px;
   }
 }
 
 @media screen and (max-width: 62em) {
+  .thuvienanh {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
   .follow .title-fl {
     padding: 0px;
   }
@@ -1148,6 +1262,10 @@ h2 {
 }
 
 @media only screen and (max-width: 48em) {
+  .thuvienanh {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
   .home .content1 .content {
     margin-top: 5%;
     left: 20%;
@@ -1177,6 +1295,10 @@ h2 {
 }
 
 @media only screen and (max-width: 36em) {
+  .thuvienanh {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
   .home .content1 .content {
     margin-top: 0px;
     width: 300px;
@@ -1195,6 +1317,7 @@ h2 {
   .home .content2 h1 {
     font-size: 30px;
     left: 15%;
+    top: 170px;
   }
   .follow .title-fl {
     padding: 0px 10px;

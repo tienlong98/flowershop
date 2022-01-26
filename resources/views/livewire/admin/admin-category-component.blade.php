@@ -40,7 +40,7 @@
                                     <td>{{$category->slug}}</td>
                                     <td>
                                         <a href="{{route('admin.editcategory', ['category_slug' => $category->slug])}}"><i class="far fa-edit"></i></a>
-                                        <a class="ml-2" onclick="confirm('削除されますか？') || event.stopImmediatePropagation()" href="#" wire:click.prevent="deleteCategory({{$category->id}})"><i class="far fa-times-circle text-danger"></i></a>
+                                        <a class="ml-2" onclick="confirm('削除しますか？') || event.stopImmediatePropagation()" href="#" wire:click.prevent="deleteCategory({{$category->id}})"><i class="far fa-times-circle text-danger"></i></a>
 
                                     </td>
                                 </tr>

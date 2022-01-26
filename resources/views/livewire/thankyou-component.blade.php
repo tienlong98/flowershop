@@ -3,9 +3,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Thank you for your order</h2>
-                <p>A confirmation email was sent.</p>
-                <a href="/shop" class="btn-camon">Continue Shopping</a>
+                    <h2>ご注文ありがとうございました</h2>
+                <p>確認メールが送信されました。</p>
+                <a href="/shop" class="btn-camon">ショッピングを続ける</a>
                 </div>
             </div>
         </div>

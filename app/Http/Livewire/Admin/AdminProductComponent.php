@@ -12,7 +12,7 @@ class AdminProductComponent extends Component
     public function deleteProduct($id){
         $product = Product::find($id);
         $product->delete();
-        session()->flash('Tin_nhan_thanh_cong', '削除しました。');
+        session()->flash('Tin_nhan_thanh_cong', '削除されました。');
 
     }
     public function render()

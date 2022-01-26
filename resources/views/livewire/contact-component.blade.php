@@ -82,14 +82,14 @@
                         </div>
 
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center">
-                            <input type="text" name="" placeholder="Your name" id="" class="from_control">
+                            <input type="text" name="" placeholder="名前" id="" class="from_control">
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center">
-                            <input type="email" name="" placeholder="Email" id="" class="from_control">
+                            <input type="email" name="" placeholder="Eメール" id="" class="from_control">
                         </div>
                         <div class="col-xl-12 text-center ">
                             <textarea class="form-control " id="exampleFormControlTextarea1" rows="10" cols="40"
-                                placeholder="Comment"></textarea>
+                                placeholder="コメント"></textarea>
                         </div>
                         <div class=" col-lg-12 text-center sendmess mt-5 mb-5 ">                           
                                 <a href="" class="button-contact text-center ">

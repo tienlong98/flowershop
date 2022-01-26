@@ -1,4 +1,5 @@
 <div>
+
     <div class="home-shop">
         <div class="container">
             <div class="row">
@@ -53,8 +54,8 @@
                                     <div class="css-img">
 
                                         <a href="{{ route('product.details', ['slug' => $product->slug]) }}"><img
-                                                src="{{ asset('images') }}/{{ $product->image }}" class="img-fluid"
-                                                alt=""></a>
+                                                src="{{ asset('images') }}/{{ $product->image }}"
+                                                class="img-fluid" alt=""></a>
                                     </div>
                                     <div class="content-item">
                                         <div class="danhgia d-flex justify-content-center">
@@ -68,8 +69,9 @@
                                             <p class="tensp ">{{ $product->name }}</p>
                                         </a>
                                         <p class="giasp ">{{ number_format($product->regular_price) }}円</p>
-                                        <a href="" class="themgiohang"
-                                            wire:click.prevent="store('{{ $product->id }}','{{ $product->name }}','{{ $product->regular_price }}')">追加する </a>
+                                        <a id="btntoast" class="themgiohang"
+                                            wire:click.prevent="store('{{ $product->id }}','{{ $product->name }}','{{ $product->regular_price }}')">追加する
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -110,8 +112,8 @@
                                 <div class="content-body">
                                     <div class="product-name">
                                         <a href="{{ route('product.details', ['slug' => $product->slug]) }}">
-                                        <span class="text-product">{{$p_product->name}}</span>
-                                    </a>
+                                            <span class="text-product">{{ $p_product->name }}</span>
+                                        </a>
                                     </div>
                                     <div class="danhgia-spnb">
                                         <i class="far fa-star"></i>
@@ -121,14 +123,14 @@
                                         <i class="far fa-star"></i>
                                     </div>
                                     <div class="gia-spnb">
-                                        <span>{{$p_product->regular_price}}円</span>
+                                        <span>{{ $p_product->regular_price }}円</span>
                                     </div>
                                 </div>
 
                             </li>
                         @endforeach
                     </ul>
-                    
+
                 </div>
             </div>
         </div>

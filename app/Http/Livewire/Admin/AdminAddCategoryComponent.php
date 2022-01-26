@@ -18,7 +18,7 @@ class AdminAddCategoryComponent extends Component
         $category->name = $this->name;
         $category->slug = $this->slug;
         $category->save();
-        session()->flash('Tin_nhan_thanh_cong', '追加しました。');
+        session()->flash('Tin_nhan_thanh_cong', '追加されました。');
     }
     public function render()
     {

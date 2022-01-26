@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="card">
+                <div class="card" style="min-width: 800px;overflow: auto">
                     <div class="card-header">
                         <div class="row">
                             <div class="col-lg-6">
@@ -27,7 +27,7 @@
                         @if (Session::has('Tin_nhan_thanh_cong'))
                             <div class="alert alert-success">{{ Session::get('Tin_nhan_thanh_cong') }}</div>
                         @endif
-                        <table class="table">
+                        <table class="table table-responsive">
                             <thead>
                                 <tr>
                                     <th>
@@ -70,7 +70,7 @@
                                         <td>
                                             <a
                                                 href="{{ route('admin.editproduct', ['product_slug' => $product->slug]) }}"><i class="far fa-edit"></i></i></a>
-                                            <a class="ml-2" href="#" onclick="confirm('削除されますか？') || event.stopImmediatePropagation()"
+                                            <a class="ml-2" href="#" onclick="confirm('削除しますか？') || event.stopImmediatePropagation()"
                                                 wire:click.prevent="deleteProduct({{ $product->id }})"><i class="far fa-times-circle text-danger"></i></a>
                                         </td>
                                     </tr>

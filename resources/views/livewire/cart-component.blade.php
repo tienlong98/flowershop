@@ -1,6 +1,4 @@
 <div>
-
-
     <div class="home-shop">
         <div class="container">
             <div class="row">

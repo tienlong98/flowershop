@@ -15,6 +15,8 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+        />
     @livewireStyles
 </head>
 
@@ -33,14 +35,12 @@
                         <li>
                             <a style="color: #544e48" href="/shop">ショップ</a>
                         </li>
-                        <li>
-                            <a style="color: #544e48" href="/about">チーム</a>
-                        </li>
+                       
                         <li>
                             <a style="color: #544e48" href="/contact">コンタクト</a>
                         </li>
                         <li>
-                            <a style="color: #544e48" href="/shop">ギャラリー</a>
+                            <a style="color: #544e48" href="/gallery">ギャラリー</a>
                         </li>
                     </ul>
                 </div>
@@ -69,7 +69,7 @@
                                             <div class="mt-2"><a href="{{ route('admin.coupons') }}">クーポン</a>
                                             </div>
                                             <div class="mt-2"><a href="{{ route('admin.orders') }}">注文</a></div>
-
+                                            <div class="mt-2"><a href="{{ route('admin.gallerys') }}">ギャラリー</a></div>
                                             <div class="mt-2"><a href="{{ route('logout') }}"
                                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit('');">ログアウト</a>
                                             </div>
@@ -116,19 +116,17 @@
                 </label>
                 <ul>
                     <li>
-                        <a class="nav-item-mobile" style="color: #544e48" href="/">Home</a>
+                        <a class="nav-item-mobile" style="color: #544e48" href="/">ホーム</a>
                     </li>
                     <li>
-                        <a class="nav-item-mobile" style="color: #544e48" href="/shop">Shop</a>
+                        <a class="nav-item-mobile" style="color: #544e48" href="/shop">ショップ</a>
+                    </li>
+                    
+                    <li>
+                        <a class="nav-item-mobile" style="color: #544e48" href="/contact">コンタクト</a>
                     </li>
                     <li>
-                        <a class="nav-item-mobile" style="color: #544e48" href="/about">About</a>
-                    </li>
-                    <li>
-                        <a class="nav-item-mobile" style="color: #544e48" href="/contact">Contact</a>
-                    </li>
-                    <li>
-                        <a class="nav-item-mobile" style="color: #544e48" href="/shop">Gallery</a>
+                        <a class="nav-item-mobile" style="color: #544e48" href="/gallery">ギャラリー</a>
                     </li>
                 </ul>
             </div>
@@ -200,8 +198,13 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="{{ asset('/js/scrip.js') }}"></script>
-    <script src="https://cdn.tiny.cloud/1/1fta24jotxvdro0bnopd4chqacl8d7m3wxaty5qho3g11vtk/tinymce/5/tinymce.min.js"
-        referrerpolicy="origin"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
     @livewireScripts
 </body>
 

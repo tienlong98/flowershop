@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Product;
+
 use Cart;
 use App\Models\Category;
 
@@ -23,6 +24,7 @@ class DetailComponent extends Component
         $categories=Category::all();
         
         $product=Product::where('slug', $this->slug)->first();
+        // $orderItems = $product->orderItems->where('rstatus', 1);
         $popular_product=Product::inRandomOrder()->limit(4)->get();
         $related_product=Product::where('category_id', $product->category_id)->inRandomOrder()->limit(5)->get();
         return view('livewire.detail-component',['product'=>$product, 'popular_product'=>$popular_product, 'categories'=>$categories, 'related_product'=>$related_product],)->layout('layouts.base');
