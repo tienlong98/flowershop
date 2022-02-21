@@ -27,7 +27,7 @@
                 <a style="color: #544e48" href="/" class="logo"><span>F</span>lower</a>
             </div>
             <div class="menu-pc-icon d-flex">
-                <div class="list-menu">
+                <div class="list-menu a-menu">
                     <ul>
                         <li>
                             <a style="color: #544e48" href="/">ホーム</a>
@@ -110,7 +110,7 @@
                 <i class="fas fa-bars"></i>
             </label>
             <input type="checkbox" hidden class="nav_input" name="" id="nav-id-input">
-            <div class="list-menu-mobile">
+            <div class="list-menu-mobile a-menu">
                 <label for="nav-id-input" class="nav-mobile-close">
                     <i class="fas fa-times"></i>
                 </label>
